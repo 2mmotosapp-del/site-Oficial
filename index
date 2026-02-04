@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2M Motos | Compra, Venda e Financiamento de Motocicletas</title>
+    <meta name="description"
+        content="2M Motos - Especialistas em compra, venda, troca e financiamento de motocicletas. Loja em Aparecida de Goiânia com amplo estacionamento.">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.ibb.co/yFd1Zfyq/logowebmail.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/yFd1Zfyq/logowebmail.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/yFd1Zfyq/logowebmail.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Analytics via GTM -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-XXXXXX');</script>
+
+    <style>
+        /* ===== PALETA DE CORES ATUALIZADA ===== */
+        :root {
+            --primary: #0a2463;
+            /* Azul mantido */
+            --secondary: #d50000;
+            /* Vermelho vibrante */
+            --secondary-dark: #b71c1c;
+            /* Vermelho escuro */
+            --secondary-light: #ff5252;
+            /* Vermelho claro */
+            --accent: #3e92cc;
+            --light: #f8f9fa;
+            --dark: #1a1a1a;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --success: #28a745;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.12);
+            --transition: all 0.3s ease;
+            --border-radius: 8px;
+            --container-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            color: var(--primary);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .btn-secondary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #083182;
+            color: white;
+        }
+
+        .btn-client {
+            background-color: transparent;
+            color: var(--secondary);
+            border: 2px solid var(--secondary);
+            padding: 10px 25px;
+            font-size: 0.95rem;
+        }
+
+        .btn-client:hover {
+            background-color: var(--secondary);
+            color: white;
+            border-color: var(--secondary);
+        }
+
+        /* ===== HEADER OTIMIZADO - MENU ALINHADO ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 5px 0;
+            background-color: rgba(255, 255, 255, 0.98);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            transition: var(--transition);
+        }
+
+        header.scrolled .header-container {
+            padding: 10px 0;
+        }
+
+        /* LOGO */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .logo-img {
+            height: 55px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        /* MENU PRINCIPAL COM ESPAÇAMENTO OTIMIZADO */
+        .nav-container {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+            margin: 0 30px;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 28px;
+            /* Espaçamento otimizado */
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        nav li {
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        nav a {
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            padding: 8px 0;
+            color: var(--dark);
+            position: relative;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--secondary);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after,
+        nav a.active::after {
+            width: 100%;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--primary);
+        }
+
+        /* BOTÕES DO HEADER */
+        .header-buttons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(rgba(10, 36, 99, 0.85), rgba(213, 0, 0, 0.8)),
+                url('https://i.ibb.co/Kx2DPzRt/motosonho.png');
+            background-size: cover;
+            background-position: center;
+            margin-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 4.5rem;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-title span {
+            color: #ffcc00;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: white;
+            margin-bottom: 40px;
+            font-weight: 300;
+            line-height: 1.6;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* ===== FINANCIAMENTO SECTION ===== */
+        .financiamento {
+            background-color: white;
+        }
+
+        .financiamento-intro {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+
+        .financiamento-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .financiamento-desc {
+            font-size: 1.2rem;
+            color: var(--gray);
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .financiamento-highlight {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--secondary);
+            font-style: italic;
+            padding: 20px;
+            background-color: rgba(213, 0, 0, 0.05);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--secondary);
+        }
+
+        .bancos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 25px;
+            margin: 60px 0;
+        }
+
+        .banco-item {
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 110px;
+        }
+
+        .banco-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .banco-img {
+            max-width: 100%;
+            max-height: 60px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .banco-item:hover .banco-img {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .financiamento-tipos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .tipo-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 4px solid var(--secondary);
+        }
+
+        .tipo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .tipo-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(213, 0, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--secondary);
+            font-size: 2rem;
+        }
+
+        .tipo-title {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .tipo-desc {
+            color: var(--gray);
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* ===== SERVIÇOS SECTION ===== */
+        .servicos {
+            background-color: var(--light-gray);
+        }
+
+        .servicos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .servico-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .servico-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .servico-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .servico-content {
+            padding: 35px;
+        }
+
+        .servico-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .servico-desc {
+            color: var(--gray);
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .servico-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .servico-features li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .servico-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        /* ===== CONSIGNAÇÃO SECTION ===== */
+        .consignacao {
+            background-color: white;
+        }
+
+        .consignacao-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+
+        .consignacao-title {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .consignacao-subtitle {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .consignacao-highlight {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--secondary);
+            font-style: italic;
+            margin-top: 30px;
+        }
+
+        .beneficios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .beneficio-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 4px solid var(--secondary);
+        }
+
+        .beneficio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .beneficio-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(213, 0, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--secondary);
+            font-size: 2rem;
+        }
+
+        .beneficio-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .beneficio-desc {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .consignacao-cta {
+            text-align: center;
+            margin-top: 60px;
+            padding: 50px;
+            background: linear-gradient(135deg, rgba(10, 36, 99, 0.05) 0%, rgba(213, 0, 0, 0.05) 100%);
+            border-radius: var(--border-radius);
+        }
+
+        /* ===== ESTOQUE SECTION ===== */
+        .estoque {
+            background-color: var(--light-gray);
+        }
+
+        .estoque-filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 25px;
+            background-color: white;
+            border: 2px solid var(--light-gray);
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background-color: var(--secondary);
+            color: white;
+            border-color: var(--secondary);
+        }
+
+        .motos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .moto-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .moto-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .moto-img {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .moto-info {
+            padding: 25px;
+        }
+
+        .moto-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .moto-desc {
+            color: var(--gray);
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .moto-features {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .moto-feature {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--gray);
+        }
+
+        .moto-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        /* ===== MARCAS SECTION ===== */
+        .marcas {
+            background-color: white;
+        }
+
+        .marcas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 30px;
+        }
+
+        .marca-item {
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100px;
+        }
+
+        .marca-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .marca-img {
+            max-width: 100%;
+            max-height: 50px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+
+        .marca-item:hover .marca-img {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        /* ===== CONTATO SECTION COM DUAS COLUNAS ===== */
+        .contato {
+            background-color: var(--light-gray);
+        }
+
+        .contato-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 60px;
+        }
+
+        .info-duas-colunas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .info-coluna {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .info-icon {
+            background-color: var(--secondary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .info-text h3 {
+            margin-bottom: 5px;
+            color: var(--primary);
+            font-size: 1.3rem;
+        }
+
+        .info-text p {
+            color: var(--gray);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .info-text a {
+            color: var(--secondary);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .info-text a:hover {
+            color: var(--secondary-dark);
+            text-decoration: underline;
+        }
+
+        /* SEPARADOR */
+        .info-separator {
+            height: 1px;
+            background-color: var(--light-gray);
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        /* BOTÃO ROTA INTEGRADO AO ENDEREÇO */
+        .endereco-com-rota {
+            margin-top: 15px;
+        }
+
+        .btn-rota {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .btn-rota:hover {
+            background-color: #083182;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .localizacao-destaque {
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-top: 30px;
+        }
+
+        .localizacao-destaque h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .localizacao-destaque ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .localizacao-destaque li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            color: var(--gray);
+        }
+
+        .localizacao-destaque li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .contato-buttons {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contato-buttons h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* MAPA NO LADO DIREITO */
+        .map-container {
+            margin-top: 40px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+            height: 500px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 70px 0 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+            margin-bottom: 50px;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: var(--secondary);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* ===== BOTÕES FLUTUANTES ===== */
+        .float-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .float-btn:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .float-btn.whatsapp {
+            background-color: #25D366;
+        }
+
+        .float-btn.instagram {
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+        }
+
+        .float-tooltip {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--dark);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+
+        .float-btn:hover .float-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ===== RESPONSIVIDADE ===== */
+        @media (max-width: 1150px) {
+            nav ul {
+                gap: 22px;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+
+            .logo-text {
+                font-size: 1.5rem;
+            }
+
+            .contato-container {
+                grid-template-columns: 1fr;
+            }
+
+            .info-duas-colunas {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .consignacao-title,
+            .financiamento-title {
+                font-size: 2.5rem;
+            }
+
+            .nav-container {
+                margin: 0 20px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 950px) {
+            .nav-container {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .mobile-nav {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+                z-index: 999;
+            }
+
+            .mobile-nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .mobile-nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .mobile-nav li {
+                padding: 15px 0;
+                border-bottom: 1px solid var(--light-gray);
+            }
+
+            .mobile-nav li:last-child {
+                border-bottom: none;
+            }
+
+            .mobile-nav a {
+                display: block;
+                font-size: 1.1rem;
+            }
+
+            .hero {
+                margin-top: 70px;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 2.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .float-buttons {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .float-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 1.3rem;
+            }
+
+            .contato-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 12px 0;
+            }
+
+            .logo-img {
+                height: 50px;
+            }
+
+            .logo-text {
+                font-size: 1.4rem;
+            }
+
+            .financiamento-tipos,
+            .servicos-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bancos-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .banco-item {
+                height: 100px;
+                padding: 20px;
+            }
+
+            .info-duas-colunas {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .map-container {
+                height: 400px;
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contato-container {
+                grid-template-columns: 1fr;
+            }
+
+            .info-duas-colunas {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .btn {
+                padding: 12px 25px;
+            }
+
+            .float-buttons {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .float-btn {
+                width: 50px;
+                height: 50px;
+            }
+
+            .consignacao-title,
+            .financiamento-title {
+                font-size: 2rem;
+            }
+
+            .beneficios-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bancos-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .logo-text {
+                font-size: 1.2rem;
+            }
+
+            .info-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .info-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        /* ===== ANIMAÇÕES ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        /* ===== BACK TO TOP ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 998;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--secondary-dark);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://i.ibb.co/yFd1Zfyq/logowebmail.png" alt="2M Motos" class="logo-img">
+            </div>
+
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="active">Principal</a></li>
+                        <li><a href="#financiamento">Financiamento</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#consignacao">Consignação</a></li>
+                        <li><a href="#estoque">Estoque</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-buttons">
+                <a href="https://crm.2mmotos.com.br/login" target="_blank" class="btn btn-client" id="clientAreaBtn">
+                    <i class="fas fa-user-circle" style="margin-right: 8px;"></i>Área do Cliente
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVEGAÇÃO MOBILE -->
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#home" class="active">Principal</a></li>
+            <li><a href="#financiamento">Financiamento</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#consignacao">Consignação</a></li>
+            <li><a href="#estoque">Estoque</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="https://crm.2mmotos.com.br/login" target="_blank" class="btn btn-client"
+                    style="width: 100%; margin-top: 15px;">
+                    <i class="fas fa-user-circle" style="margin-right: 8px;"></i>Área do Cliente
+                </a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-content animate">
+            <h1 class="hero-title">Realize seu sonho de <span>ter uma moto</span></h1>
+            <p class="hero-subtitle">Na 2M Motos você encontra as melhores motocicletas e realizamos seu financiamento
+                com os principais bancos. Compra, venda, troca e consignação - tudo em um só lugar!</p>
+            <div class="hero-buttons">
+                <a href="#financiamento" class="btn">Simular Financiamento</a>
+                <a href="#estoque" class="btn btn-secondary">Ver Estoque</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINANCIAMENTO SECTION -->
+    <section class="financiamento" id="financiamento">
+        <div class="container">
+            <h2 class="section-title">Financiamento</h2>
+            <p class="section-subtitle">Realizamos seu sonho de ter ou trocar sua moto com as melhores condições do
+                mercado</p>
+
+            <div class="financiamento-intro">
+                <h3 class="financiamento-title">Parceria com os Principais Bancos</h3>
+                <p class="financiamento-desc">Na 2M Motos, trabalhamos com os principais bancos do mercado para ajudar
+                    você a realizar seu sonho de ter ou trocar sua moto. Oferecemos condições especiais de financiamento
+                    com taxas competitivas e prazos que cabem no seu bolso.</p>
+
+                <div class="financiamento-highlight">
+                    Financiamento com os principais bancos e financiamento próprio. Facilitamos sua compra!
+                </div>
+            </div>
+
+            <div class="bancos-grid">
+                <div class="banco-item">
+                    <img src="https://i.ibb.co/YBFjdG53/image.png" alt="Banco 1" class="banco-img">
+                </div>
+                <div class="banco-item">
+                    <img src="https://i.ibb.co/C54xC2B9/image.png" alt="Banco 2" class="banco-img">
+                </div>
+                <div class="banco-item">
+                    <img src="https://i.ibb.co/gFXTPFwL/image.png" alt="Banco 3" class="banco-img">
+                </div>
+                <div class="banco-item">
+                    <img src="https://i.ibb.co/rKK2D0z8/image.png" alt="Banco 4" class="banco-img">
+                </div>
+                <div class="banco-item">
+                    <img src="https://i.ibb.co/MDJpHzmZ/image.png" alt="Banco 5" class="banco-img">
+                </div>
+                <div class="banco-item">
+                    <img src="https://i.ibb.co/nNZr0dhQ/image.png" alt="Banco 6" class="banco-img">
+                </div>
+                <div class="banco-item">
+                    <div style="text-align: center;">
+                        <div style="font-size: 1.5rem; font-weight: bold; color: var(--secondary);">2M MOTOS</div>
+                        <div style="font-size: 0.9rem; color: var(--gray);">Financiamento Próprio</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="financiamento-tipos">
+                <div class="tipo-card animate">
+                    <div class="tipo-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="tipo-title">Financiamento Bancário</h3>
+                    <p class="tipo-desc">Parcelas fixas com os melhores bancos do mercado. Taxas competitivas e prazos
+                        de até 60 meses para você realizar seu sonho.</p>
+                    <a href="https://wa.me/5562991873663?text=Olá! Gostaria de simular um financiamento bancário para comprar uma moto."
+                        target="_blank" class="btn" style="padding: 12px 25px;">Simular Agora</a>
+                </div>
+
+                <div class="tipo-card animate">
+                    <div class="tipo-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="tipo-title">Financiamento Próprio</h3>
+                    <p class="tipo-desc">Condições especiais diretamente com a 2M Motos. Menor burocracia, aprovação
+                        rápida e atendimento personalizado.</p>
+                    <a href="https://wa.me/5562991873663?text=Olá! Gostaria de saber mais sobre o financiamento próprio da 2M Motos."
+                        target="_blank" class="btn" style="padding: 12px 25px;">Saber Mais</a>
+                </div>
+
+                <div class="tipo-card animate">
+                    <div class="tipo-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3 class="tipo-title">Troca de Motos</h3>
+                    <p class="tipo-desc">Dê sua moto atual como entrada e financie o restante. Avaliamos seu veículo e
+                        oferecemos a melhor proposta de troca.</p>
+                    <a href="https://wa.me/5562991873663?text=Olá! Gostaria de avaliar minha moto para fazer uma troca."
+                        target="_blank" class="btn" style="padding: 12px 25px;">Avaliar Minha Moto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS SECTION -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <p class="section-subtitle">Soluções completas para entusiastas e colecionadores de motocicletas</p>
+
+            <div class="servicos-grid">
+                <div class="servico-card animate">
+                    <img src="https://images.unsplash.com/photo-1517844845385-23f9630cdbdb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="Compra de Motos" class="servico-img">
+                    <div class="servico-content">
+                        <h3 class="servico-title">Compra de Motos</h3>
+                        <p class="servico-desc">Seleção exclusiva de motocicletas premium, seminovas e de coleção.
+                            Trabalhamos com as principais marcas do mercado.</p>
+                        <ul class="servico-features">
+                            <li>Motos verificadas e garantidas</li>
+                            <li>Financiamento facilitado</li>
+                            <li>Test drive agendado</li>
+                            <li>Documentação em dia</li>
+                        </ul>
+                        <a href="#estoque" class="btn">Ver estoque</a>
+                    </div>
+                </div>
+
+                <div class="servico-card animate">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="Venda por Consignação" class="servico-img">
+                    <div class="servico-content">
+                        <h3 class="servico-title">Venda por Consignação</h3>
+                        <p class="servico-desc">Venda sua moto com segurança e pelo melhor preço do mercado. Nossa
+                            equipe especializada cuida de todo o processo.</p>
+                        <ul class="servico-features">
+                            <li>Avaliação técnica especializada</li>
+                            <li>Fotografia profissional</li>
+                            <li>Divulgação ampliada</li>
+                            <li>Negociação especializada</li>
+                        </ul>
+                        <a href="#consignacao" class="btn">Saber mais</a>
+                    </div>
+                </div>
+
+                <div class="servico-card animate">
+                    <img src="https://images.unsplash.com/photo-1566891439633-e183f368493b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="Troca e Financiamento" class="servico-img">
+                    <div class="servico-content">
+                        <h3 class="servico-title">Troca e Financiamento</h3>
+                        <p class="servico-desc">Facilitamos a troca da sua moto atual por um modelo novo ou seminovo,
+                            com financiamento pelos principais bancos.</p>
+                        <ul class="servico-features">
+                            <li>Avaliação justa da sua moto</li>
+                            <li>Financiamento com vários bancos</li>
+                            <li>Condições especiais</li>
+                            <li>Processo simplificado</li>
+                        </ul>
+                        <a href="https://wa.me/5562991873663?text=Olá! Gostaria de simular uma troca de moto com financiamento."
+                            target="_blank" class="btn">Simular troca</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONSIGNAÇÃO SECTION -->
+    <section class="consignacao" id="consignacao">
+        <div class="container">
+            <div class="consignacao-header">
+                <h2 class="consignacao-title">Venda por Consignação</h2>
+                <p class="consignacao-subtitle">Na 2M Motos, oferecemos um serviço de consignação diferenciado. Com
+                    nossa experiência e técnica apurada, garantimos a valorização máxima do seu veículo.</p>
+                <p class="consignacao-highlight">"Venda sua moto com segurança, agilidade e pelo melhor preço do
+                    mercado"</p>
+            </div>
+
+            <div class="beneficios-grid">
+                <div class="beneficio-card animate">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3 class="beneficio-title">Avaliação Justa</h3>
+                    <p class="beneficio-desc">Análise técnica detalhada para definir o melhor preço de mercado com base
+                        em equipamentos, estado de conservação e histórico do veículo.</p>
+                </div>
+
+                <div class="beneficio-card animate">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="beneficio-title">Fotografia Profissional</h3>
+                    <p class="beneficio-desc">Imagens de alta qualidade feitas em estúdio próprio para destacar sua moto
+                        nos anúncios e atrair mais compradores qualificados.</p>
+                </div>
+
+                <div class="beneficio-card animate">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="beneficio-title">Divulgação Ampliada</h3>
+                    <p class="beneficio-desc">Exposição em nossa loja física e nas principais plataformas online,
+                        alcançando milhares de potenciais compradores em todo o país.</p>
+                </div>
+
+                <div class="beneficio-card animate">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="beneficio-title">Negociação Especializada</h3>
+                    <p class="beneficio-desc">Nossa equipe cuida de toda a negociação com potenciais compradores,
+                        garantindo as melhores condições para você.</p>
+                </div>
+            </div>
+
+            <div class="consignacao-cta">
+                <h3 style="font-size: 2rem; margin-bottom: 20px; color: var(--primary);">Pronto para vender sua moto?
+                </h3>
+                <p style="font-size: 1.2rem; margin-bottom: 30px; color: var(--gray);">Entre em contato agora mesmo para
+                    uma avaliação sem compromisso</p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="https://wa.me/5562991873663?text=Olá! Gostaria de uma avaliação para vender minha moto por consignação."
+                        target="_blank" class="btn">
+                        <i class="fab fa-whatsapp" style="margin-right: 10px;"></i>WhatsApp
+                    </a>
+                    <a href="tel:+5562991873663" class="btn btn-secondary">
+                        <i class="fas fa-phone-alt" style="margin-right: 10px;"></i>Ligar agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTOQUE SECTION -->
+    <section class="estoque" id="estoque">
+        <div class="container">
+            <h2 class="section-title">Estoque em Destaque</h2>
+            <p class="section-subtitle">Conheça nosso estoque exclusivo de motocicletas premium disponíveis para compra
+            </p>
+
+            <div class="estoque-filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="esportiva">Esportivas</button>
+                <button class="filter-btn" data-filter="naked">Naked</button>
+                <button class="filter-btn" data-filter="custom">Custom</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+            </div>
+
+            <div class="motos-grid">
+                <!-- Moto 1 -->
+                <div class="moto-card animate" data-category="esportiva">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="Ducati Panigale V4" class="moto-img">
+                    <div class="moto-info">
+                        <h3 class="moto-title">Ducati Panigale V4</h3>
+                        <p class="moto-desc">A mais pura expressão de performance e tecnologia Ducati, com motor V4 de
+                            214 cv.</p>
+                        <div class="moto-features">
+                            <div class="moto-feature">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>214 cv</span>
+                            </div>
+                            <div class="moto-feature">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>V4</span>
+                            </div>
+                            <div class="moto-feature">
+                                <i class="fas fa-cog"></i>
+                                <span>6 Marchas</span>
+                            </div>
+                        </div>
+                        <div class="moto-price">R$ 149.990</div>
+                        <a href="https://wa.me/5562991873663?text=Olá! Tenho interesse na Ducati Panigale V4 e gostaria de simular um financiamento."
+                            target="_blank" class="btn" style="width: 100%;">
+                            <i class="fab fa-whatsapp" style="margin-right: 8px;"></i>Consultar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Moto 2 -->
+                <div class="moto-card animate" data-category="custom">
+                    <img src="https://images.unsplash.com/photo-1566891439633-e183f368493b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="Harley-Davidson Street Glide" class="moto-img">
+                    <div class="moto-info">
+                        <h3 class="moto-title">Harley-Davidson Street Glide</h3>
+                        <p class="moto-desc">A lendária touring bike com som premium, conforto excepcional e estilo
+                            inconfundível.</p>
+                        <div class="moto-features">
+                            <div class="moto-feature">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>93 cv</span>
+                            </div>
+                            <div class="moto-feature">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>V2</span>
+                            </div>
+                            <div class="moto-feature">
+                                <i class="fas fa-cog"></i>
+                                <span>6 Marchas</span>
+                            </div>
+                        </div>
+                        <div class="moto-price">R$ 125.990</div>
+                        <a href="https://wa.me/5562991873663?text=Olá! Tenho interesse na Harley-Davidson Street Glide e gostaria de simular um financiamento."
+                            target="_blank" class="btn" style="width: 100%;">
+                            <i class="fab fa-whatsapp" style="margin-right: 8px;"></i>Consultar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Moto 3 -->
+                <div class="moto-card animate" data-category="adventure">
+                    <img src="https://images.unsplash.com/photo-1517844845385-23f9630cdbdb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="BMW R 1250 GS Adventure" class="moto-img">
+                    <div class="moto-info">
+                        <h3 class="moto-title">BMW R 1250 GS Adventure</h3>
+                        <p class="moto-desc">Aventure-se por qualquer terreno com esta lendária moto com motor boxer de
+                            136 cv.</p>
+                        <div class="moto-features">
+                            <div class="moto-feature">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>136 cv</span>
+                            </div>
+                            <div class="moto-feature">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Boxer</span>
+                            </div>
+                            <div class="moto-feature">
+                                <i class="fas fa-cog"></i>
+                                <span>6 Marchas</span>
+                            </div>
+                        </div>
+                        <div class="moto-price">R$ 119.990</div>
+                        <a href="https://wa.me/5562991873663?text=Olá! Tenho interesse na BMW R 1250 GS Adventure e gostaria de simular um financiamento."
+                            target="_blank" class="btn" style="width: 100%;">
+                            <i class="fab fa-whatsapp" style="margin-right: 8px;"></i>Consultar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="https://wa.me/5562991873663?text=Olá! Gostaria de simular um financiamento para comprar uma moto."
+                    target="_blank" class="btn btn-secondary" style="font-size: 1.1rem; padding: 18px 45px;">
+                    <i class="fas fa-calculator" style="margin-right: 10px;"></i>Simular Financiamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARCAS SECTION -->
+    <section class="marcas" id="marcas">
+        <div class="container">
+            <h2 class="section-title">Marcas que Trabalhamos</h2>
+            <p class="section-subtitle">As melhores e mais renomadas marcas de motocicletas do mundo</p>
+
+            <div class="marcas-grid">
+                <div class="marca-item">
+                    <img src="https://i.ibb.co/MxhW7hqQ/image.png" alt="Marca 1" class="marca-img">
+                </div>
+                <div class="marca-item">
+                    <img src="https://i.ibb.co/04vkv0W/image.png" alt="Marca 2" class="marca-img">
+                </div>
+                <div class="marca-item">
+                    <img src="https://i.ibb.co/yBs6Lxpb/image.png" alt="Marca 3" class="marca-img">
+                </div>
+                <div class="marca-item">
+                    <img src="https://i.ibb.co/G3btVvPf/image.png" alt="Marca 4" class="marca-img">
+                </div>
+                <div class="marca-item">
+                    <img src="https://i.ibb.co/mVFHryrN/image.png" alt="Marca 5" class="marca-img">
+                </div>
+                <div class="marca-item">
+                    <img src="https://i.ibb.co/394D5Jmr/image.png" alt="Marca 6" class="marca-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO SECTION COM DUAS COLUNAS -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Estamos prontos para atender você e responder todas as suas dúvidas</p>
+
+            <div class="contato-container">
+                <div class="info-duas-colunas">
+                    <!-- PRIMEIRA COLUNA -->
+                    <div class="info-coluna">
+                        <!-- Endereço -->
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>Endereço</h3>
+                                <p>Av J2 Qd 63 Lt 19/20 Loja 3<br>Papillon Park, Aparecida de Goiânia - GO<br>CEP:
+                                    74920-765</p>
+                                <div class="endereco-com-rota">
+                                    <button class="btn-rota"
+                                        onclick="window.open('https://www.google.com/maps/dir//2M+Motos+(Loja+2),+Av.+J2,+Aparecida+de+Goiânia+-+GO,+74920-765/@-16.7760773,-49.2754287,17z', '_blank')">
+                                        <i class="fas fa-route"></i>Traçar Rota no Google Maps
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Separador -->
+                        <div class="info-separator"></div>
+
+                        <!-- Telefone -->
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>Telefone</h3>
+                                <p>(62) 3085-5377<br>WhatsApp: <a href="https://wa.me/5562991873663"
+                                        target="_blank">(62) 99187-3663</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEGUNDA COLUNA -->
+                    <div class="info-coluna">
+                        <!-- E-mail -->
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>E-mail</h3>
+                                <p><a href="mailto:vendas@2mmotos.com.br">vendas@2mmotos.com.br</a><br><a
+                                        href="mailto:financiamento@2mmotos.com.br">financiamento@2mmotos.com.br</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Separador -->
+                        <div class="info-separator"></div>
+
+                        <!-- Horário -->
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>Horário de Funcionamento</h3>
+                                <p>Segunda a Sexta: 8h às 19h<br>Sábado: 8h às 13h<br>Domingo: Fechado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAPA -->
+
+            </div>
+
+            <!-- LOCALIZAÇÃO DESTAQUE -->
+            <div class="localizacao-destaque">
+                <h3>Loja Bem Localizada</h3>
+                <p>Nossa loja está estrategicamente localizada no Papillon Park, com fácil acesso e comodidade
+                    para nossos clientes.</p>
+                <ul>
+                    <li>Amplo estacionamento</li>
+                    <li>Estrutura para receber bem os clientes</li>
+                    <li>Área de test drive</li>
+                    <li>Showroom climatizado</li>
+                </ul>
+            </div>
+
+            <!-- BOTÕES DE CONTATO -->
+            <div class="contato-buttons">
+                <h3>Fale diretamente conosco:</h3>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5562991873663?text=Olá! Gostaria de mais informações sobre a 2M Motos."
+                        target="_blank" class="btn">
+                        <i class="fab fa-whatsapp" style="margin-right: 10px;"></i>WhatsApp
+                    </a>
+                    <a href="tel:+5562991873663" class="btn btn-secondary">
+                        <i class="fas fa-phone-alt" style="margin-right: 10px;"></i>Ligar agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>2M Motos</h3>
+                    <p>Especialistas em compra, venda, troca e financiamento de motocicletas. Loja em Aparecida de
+                        Goiânia com amplo estacionamento e estrutura completa.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/2m.motos/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Navegação</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Principal</a></li>
+                        <li><a href="#financiamento">Financiamento</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#consignacao">Consignação</a></li>
+                        <li><a href="#estoque">Estoque</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul class="footer-links">
+                        <li><a href="#financiamento">Financiamento de Motos</a></li>
+                        <li><a href="#consignacao">Venda por Consignação</a></li>
+                        <li><a href="#estoque">Compra de Motos</a></li>
+                        <li><a href="#servicos">Troca de Motos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Av J2 Qd 63 Lt 19/20 Loja
+                            3</li>
+                        <li><i class="fas fa-phone-alt" style="margin-right: 10px;"></i> (62) 3085-5377</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> contato@2mmotos.com.br</li>
+                        <li><i class="fab fa-whatsapp" style="margin-right: 10px;"></i> (62) 99187-3663</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> 2M Motos. Todos os direitos reservados. | Loja: Av J2 Qd 63 Lt
+                    19/20 Loja 3 - Papillon Park, Aparecida de Goiânia - GO</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO BACK TO TOP -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- BOTÕES FLUTUANTES -->
+    <div class="float-buttons">
+        <a href="https://wa.me/5562991873663?text=Olá! Gostaria de informações sobre as motos da 2M Motos."
+            target="_blank" class="float-btn whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="float-tooltip">Fale no WhatsApp</span>
+        </a>
+
+        <a href="https://www.instagram.com/2m.motos/" target="_blank" class="float-btn instagram">
+            <i class="fab fa-instagram"></i>
+            <span class="float-tooltip">Siga no Instagram</span>
+        </a>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Atualiza o ano no footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Menu Mobile
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileNav = document.getElementById('mobileNav');
+
+            mobileMenuBtn.addEventListener('click', function () {
+                mobileNav.classList.toggle('active');
+                mobileMenuBtn.innerHTML = mobileNav.classList.contains('active')
+                    ? '<i class="fas fa-times"></i>'
+                    : '<i class="fas fa-bars"></i>';
+            });
+
+            // Fecha o menu ao clicar em um link
+            document.querySelectorAll('.mobile-nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileNav.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                // Back to top button
+                const backToTop = document.getElementById('backToTop');
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('active');
+                } else {
+                    backToTop.classList.remove('active');
+                }
+            });
+
+            // Back to top
+            document.getElementById('backToTop').addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Filtro do estoque
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const motoCards = document.querySelectorAll('.moto-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class de todos os botões
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Adiciona active class ao botão clicado
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    motoCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Animação de scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observa elementos para animação
+            document.querySelectorAll('.tipo-card, .servico-card, .beneficio-card, .moto-card, .marca-item').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Ativa links ativos no menu baseado na scroll position
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a, .mobile-nav a');
+
+            function updateActiveLink() {
+                let current = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveLink);
+
+            // Pré-carregamento de imagens
+            const imageUrls = [
+                'https://i.ibb.co/Kx2DPzRt/motosonho.png',
+                'https://images.unsplash.com/photo-1517844845385-23f9630cdbdb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+                'https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+                'https://images.unsplash.com/photo-1566891439633-e183f368493b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+                'https://i.ibb.co/YBFjdG53/image.png',
+                'https://i.ibb.co/C54xC2B9/image.png',
+                'https://i.ibb.co/gFXTPFwL/image.png',
+                'https://i.ibb.co/rKK2D0z8/image.png',
+                'https://i.ibb.co/MDJpHzmZ/image.png',
+                'https://i.ibb.co/nNZr0dhQ/image.png',
+                'https://i.ibb.co/MxhW7hqQ/image.png',
+                'https://i.ibb.co/04vkv0W/image.png',
+                'https://i.ibb.co/yBs6Lxpb/image.png',
+                'https://i.ibb.co/G3btVvPf/image.png',
+                'https://i.ibb.co/mVFHryrN/image.png',
+                'https://i.ibb.co/394D5Jmr/image.png'
+            ];
+
+            imageUrls.forEach(url => {
+                const img = new Image();
+                img.src = url;
+            });
+        });
+    </script>
+</body>
+
+</html>
